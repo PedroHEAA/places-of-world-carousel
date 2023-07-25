@@ -1,0 +1,120 @@
+body {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/*-----------Slide - 1----------- */
+.slide-1 {
+    background: url(../images/ferdinand-stohr-PeFk7fzxTdk-unsplash.jpg) no-repeat center center;
+}
+
+.slide-1 div h1, .slide-1 div a {
+    color: rgb(238, 52, 35);
+}
+
+.slide-1 div a:hover{
+    color: rgb(193, 42, 29);}
+
+/*-----------Slide - 2----------- */
+
+.slide-2 {
+    background: url(../images/torre-eiffel-famosa-em-paris-com-cores-lindas.jpg) no-repeat center;
+}
+
+.slide-2 div h1, .slide-2 div a{
+    color: rgb(11, 20, 200);
+}
+
+.slide-2 div a:hover{
+    color: rgb(11, 19, 167);
+}
+
+/*-----------Slide - 3----------- */
+.slide-3 {
+    background: url(../images/famosa-tower-bridge-a-noite-londres-inglaterra.jpg) no-repeat;
+}
+.slide-3 div h1, .slide-3 div a{
+    color: rgb(177, 32, 230);
+}
+
+.slide-3 div a:hover{
+    color: rgb(125, 31, 159);
+}
+
+
+/*-----------Slide - 4----------- */
+.slide-4 {
+    background: url(../images/istockphoto-618332658-2048x2048-transformed.png) center center no-repeat;
+}
+
+.slide-4 div h1, .slide-4 div a{
+    color: #06b42c;
+}
+
+.slide-4 div a:hover{
+    color: #057f1f;
+}
+
+/* ----------------------------------- */
+
+.slide {
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.9s ease-in-out;
+}
+
+.slide div {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 400px;
+    height: 550px;
+    margin-left: 90px;
+    padding: 30px 35px;
+    border-radius: 15px;
+}
+
+.slide div .description{
+    overflow-y: auto;
+    margin: 20px 0px;
+    font-size: 19px;
+    text-align: justify;
+    line-height: 30px;
+    padding-inline: 0px 20px;
+}
+
+.slide.selected {
+    opacity: 1;
+    z-index: 1;
+}
+
+.btn {
+    position: absolute;
+    bottom: 40%;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.btn-left {
+    left: 2%;
+    transform: rotateY(180deg);
+}
+
+.btn-right {
+    right: 2%;
+}
+
+.btn-opacity {
+    opacity: 0.5;
+    cursor: default;
+}
